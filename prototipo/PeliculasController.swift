@@ -15,7 +15,7 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         peliculas.append(Pelicula(titulo: "Titanic", director: "James Cameron", genero: "Drama", año: "1997"))
-        peliculas.append(Pelicula(titulo: "Chabel y Pepito contra los monstruos", director: "José Estrada", genero: "Comedia", año: "1973"))
+        peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los monstruos", director: "José Estrada", genero: "Comedia", año: "1973"))
         peliculas.append(Pelicula(titulo: "Vacaciones de terror", director: "Rene Cardona", genero: "Terror", año: "1989"))
     }
     
@@ -31,11 +31,19 @@ class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDat
         return peliculas.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula")
-        return celda!
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula") as! CeldaPeliculasController
+        celda.lblDirector.text = peliculas[indexPath.row].director
+        celda.lblAño.text = peliculas[indexPath.row].año
+        celda.lblTitulo.text = peliculas[indexPath.row].titulo
+        celda.lblGenero.text = peliculas[indexPath.row].genero
+        return celda
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! DetallesPeliculasController
+        destino.pelicula = peliculas[0]
     }
 }
 

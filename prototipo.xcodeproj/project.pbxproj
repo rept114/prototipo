@@ -13,6 +13,8 @@
 		3D8DFDCA28DDFA5800BDFC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8DFDC928DDFA5800BDFC03 /* Assets.xcassets */; };
 		3D8DFDCD28DDFA5800BDFC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8DFDCB28DDFA5800BDFC03 /* LaunchScreen.storyboard */; };
 		3D8DFDD528DDFBA100BDFC03 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DFDD428DDFBA100BDFC03 /* Pelicula.swift */; };
+		3DA8F3EE28E1EEE900494F20 /* CeldaPeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */; };
+		3DA8F3F028E1FD8000494F20 /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3D8DFDCC28DDFA5800BDFC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8DFDCE28DDFA5800BDFC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D8DFDD428DDFBA100BDFC03 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
+		3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculasController.swift; sourceTree = "<group>"; };
+		3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				3D8DFDC428DDFA5400BDFC03 /* PeliculasController.swift */,
+				3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */,
+				3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -178,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA8F3EE28E1EEE900494F20 /* CeldaPeliculasController.swift in Sources */,
 				3D8DFDD528DDFBA100BDFC03 /* Pelicula.swift in Sources */,
 				3D8DFDC528DDFA5400BDFC03 /* PeliculasController.swift in Sources */,
 				3D8DFDC328DDFA5400BDFC03 /* AppDelegate.swift in Sources */,
+				3DA8F3F028E1FD8000494F20 /* DetallesPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
