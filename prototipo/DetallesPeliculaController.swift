@@ -11,6 +11,10 @@ import UIKit
 
 class DetallesPeliculasController : UIViewController {
    
+    @IBOutlet weak var lblReparto: UILabel!
+    @IBOutlet weak var lblGenero: UILabel!
+    @IBOutlet weak var lblAño: UILabel!
+    @IBOutlet weak var lblDirector: UILabel!
     var pelicula: Pelicula?
     
     override func viewDidLoad() {
@@ -20,6 +24,10 @@ class DetallesPeliculasController : UIViewController {
         
         if pelicula != nil {
             self.title = pelicula?.titulo
+            lblDirector.text = pelicula?.director
+            lblAño.text = pelicula?.año
+            lblGenero.text = pelicula?.genero
+            lblReparto.text = pelicula?.reparto
         }
     }
 }

@@ -15,6 +15,7 @@
 		3D8DFDD528DDFBA100BDFC03 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DFDD428DDFBA100BDFC03 /* Pelicula.swift */; };
 		3DA8F3EE28E1EEE900494F20 /* CeldaPeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */; };
 		3DA8F3F028E1FD8000494F20 /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */; };
+		3DE2C3AD28E4A0F500AA0E61 /* PersonajesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2C3AC28E4A0F500AA0E61 /* PersonajesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3D8DFDD428DDFBA100BDFC03 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
 		3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculasController.swift; sourceTree = "<group>"; };
 		3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
+		3DE2C3AC28E4A0F500AA0E61 /* PersonajesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonajesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				3D8DFDC428DDFA5400BDFC03 /* PeliculasController.swift */,
 				3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */,
+				3DE2C3AC28E4A0F500AA0E61 /* PersonajesController.swift */,
 				3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */,
 			);
 			name = Controladores;
@@ -187,6 +190,7 @@
 				3DA8F3EE28E1EEE900494F20 /* CeldaPeliculasController.swift in Sources */,
 				3D8DFDD528DDFBA100BDFC03 /* Pelicula.swift in Sources */,
 				3D8DFDC528DDFA5400BDFC03 /* PeliculasController.swift in Sources */,
+				3DE2C3AD28E4A0F500AA0E61 /* PersonajesController.swift in Sources */,
 				3D8DFDC328DDFA5400BDFC03 /* AppDelegate.swift in Sources */,
 				3DA8F3F028E1FD8000494F20 /* DetallesPeliculaController.swift in Sources */,
 			);

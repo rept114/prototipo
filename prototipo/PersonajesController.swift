@@ -8,19 +8,18 @@
 
 import UIKit
 
-class PeliculasController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var peliculas : [Pelicula] = []
-
-    @IBOutlet weak var tvPeliculas: UITableView!
+class PeronajesController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var personajes : [Personaje] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        peliculas.append(Pelicula(titulo: "Titanic", director: "James Cameron", genero: "Drama", año: "1997"))
-        peliculas.append(Pelicula(titulo: "Chabelo y Pepito contra los monstruos", director: "José Estrada", genero: "Comedia", año: "1973"))
-        peliculas.append(Pelicula(titulo: "Vacaciones de terror", director: "Rene Cardona", genero: "Terror", año: "1989"))
+        personajes.append(Personaje(titulo: "Titanic", director: "James Cameron", genero: "Drama", año: "1997"))
+        personajes.append(Personaje(titulo: "Chabelo y Pepito contra los monstruos", director: "José Estrada", genero: "Comedia", año: "1973"))
+        personajes.append(Personaje(titulo: "Vacaciones de terror", director: "Rene Cardona", genero: "Terror", año: "1989"))
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
