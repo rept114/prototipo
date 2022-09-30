@@ -11,7 +11,6 @@ import UIKit
 
 class DetallesPeliculasController : UIViewController {
    
-    @IBOutlet weak var lblReparto: UILabel!
     @IBOutlet weak var lblGenero: UILabel!
     @IBOutlet weak var lblAño: UILabel!
     @IBOutlet weak var lblDirector: UILabel!
@@ -27,7 +26,7 @@ class DetallesPeliculasController : UIViewController {
             lblDirector.text = pelicula?.director
             lblAño.text = pelicula?.año
             lblGenero.text = pelicula?.genero
-            lblReparto.text = pelicula?.reparto
+           
         }
     }
 }

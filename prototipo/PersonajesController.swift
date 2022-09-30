@@ -14,9 +14,10 @@ class PeronajesController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        personajes.append(Personaje(titulo: "Titanic", director: "James Cameron", genero: "Drama", año: "1997"))
-        personajes.append(Personaje(titulo: "Chabelo y Pepito contra los monstruos", director: "José Estrada", genero: "Comedia", año: "1973"))
-        personajes.append(Personaje(titulo: "Vacaciones de terror", director: "Rene Cardona", genero: "Terror", año: "1989"))
+        personajes.append(Personaje(Personaje: "Erik"))
+        personajes.append(Personaje(Personaje: "Rodrigo"))
+        personajes.append(Personaje(Personaje: "Pereo"))
+        personajes.append(Personaje(Personaje: "Torres"))
     }
     
     
@@ -28,23 +29,18 @@ class PeronajesController: UIViewController, UITableViewDelegate, UITableViewDat
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return peliculas.count
+        return personajes.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula") as! CeldaPeliculasController
-        celda.lblDirector.text = peliculas[indexPath.row].director
-        celda.lblAño.text = peliculas[indexPath.row].año
-        celda.lblTitulo.text = peliculas[indexPath.row].titulo
-        celda.lblGenero.text = peliculas[indexPath.row].genero
-        
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPersonaje") as! CeldaPersonajesController
+            celda.lblPersonaje.text = personajes[indexPath.row].Personaje
         return celda
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destino = segue.destination as! DetallesPeliculasController
-        destino.pelicula = peliculas[tvPeliculas.indexPathForSelectedRow!.row]
+
     }
 }
 

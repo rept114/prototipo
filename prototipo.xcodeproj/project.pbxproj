@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8444BB28E739A300B604E0 /* Personaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8444BA28E739A300B604E0 /* Personaje.swift */; };
+		3D8444BD28E73ADE00B604E0 /* CeldaPersonajeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8444BC28E73ADE00B604E0 /* CeldaPersonajeController.swift */; };
 		3D8DFDC328DDFA5400BDFC03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DFDC228DDFA5400BDFC03 /* AppDelegate.swift */; };
 		3D8DFDC528DDFA5400BDFC03 /* PeliculasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DFDC428DDFA5400BDFC03 /* PeliculasController.swift */; };
 		3D8DFDC828DDFA5400BDFC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8DFDC628DDFA5400BDFC03 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D8444BA28E739A300B604E0 /* Personaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personaje.swift; sourceTree = "<group>"; };
+		3D8444BC28E73ADE00B604E0 /* CeldaPersonajeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPersonajeController.swift; sourceTree = "<group>"; };
 		3D8DFDBF28DDFA5400BDFC03 /* prototipo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prototipo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8DFDC228DDFA5400BDFC03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8DFDC428DDFA5400BDFC03 /* PeliculasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				3D8DFDD428DDFBA100BDFC03 /* Pelicula.swift */,
+				3D8444BA28E739A300B604E0 /* Personaje.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 				3D8DFDC428DDFA5400BDFC03 /* PeliculasController.swift */,
 				3DA8F3ED28E1EEE900494F20 /* CeldaPeliculasController.swift */,
 				3DE2C3AC28E4A0F500AA0E61 /* PersonajesController.swift */,
+				3D8444BC28E73ADE00B604E0 /* CeldaPersonajeController.swift */,
 				3DA8F3EF28E1FD8000494F20 /* DetallesPeliculaController.swift */,
 			);
 			name = Controladores;
@@ -192,7 +198,9 @@
 				3D8DFDC528DDFA5400BDFC03 /* PeliculasController.swift in Sources */,
 				3DE2C3AD28E4A0F500AA0E61 /* PersonajesController.swift in Sources */,
 				3D8DFDC328DDFA5400BDFC03 /* AppDelegate.swift in Sources */,
+				3D8444BD28E73ADE00B604E0 /* CeldaPersonajeController.swift in Sources */,
 				3DA8F3F028E1FD8000494F20 /* DetallesPeliculaController.swift in Sources */,
+				3D8444BB28E739A300B604E0 /* Personaje.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
